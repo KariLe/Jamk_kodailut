@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<!--
+Esimerkkejä JQueryn eri tyyppisistä Ajax-metodeista
+-->
+<head>
+    <title>jq_ajax</title>
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+
+    <script type="text/javascript">
+//Tämän sisään tulee JQuery-koodi
+        $(document).ready(function()
+        {
+            
+                        
+            
+          
+
+            $("#nappi1").click(function()
+            {
+
+                var text = $("#txtfield").val();
+                /* $ajax -metodilla sekä lähetetään että
+                 * vastaanotetaan dataa samanaikaisesti. 
+                 * Metodin tyyppi voidaan määrittää itse.
+                 * $get ja $post -funktiot ovat $ajax -funktion
+                 * lyhennettyjä versioita (shortcut)
+                 */
+                $.ajax({
+                    url: "backend.php", //osoite jonne lähetetään
+                    type: "POST", //metodi
+                    data: "data=" + text, //lähetettävä data
+                    success: function(data)
+                        {//datan vastaanotto
+                        //tulos laitetaan id="textoutput" -elementin väliin
+                        $("#textoutput").html(data);
+                    }});
+
+            });
+
+            $("#nappi2").click(function()
+            {
+
+                /* $post -metodilla on mahdollista pelkästään lähettää 
+                 * tai vastaanottaa dataa. Metodin tyyppi on POST. 
+                 * Lähettäminen ja vataanottaminen samanaikaisesti on mahdollista 
+                 * jos lisätään vastaanottamisen suorittava funktio 
+                 * kolmanneksi parametriksi. 
+                 */
+                var text = $("#txtfield").val();
+                $.post("backend.php", {data: text});//pelkkä datan lähetys
+
+            });
+
+            $("#nappi3").click(function()
+            {
+
+                /* $get toimii kuten $post, mutta käytettävän
+                 * HTTP-metodin tyyppi on GET.
+                 */              
+                $.get("backend.php", function(data) {//pelkkä datan vastaanotto
+                    $("#textoutput").html(data);
+                });
+            });
+        });
+
+    </script>  
+
+    Kirjoita teksti ja valitse nappi:<br/>
+    <input type ="text" id="txtfield" value=""><br/>
+    <input type ="button" id="nappi1" value="$ajax"> 
+    <input type ="button" id="nappi2" value="$post">
+    <input type ="button" id="nappi3" value="$get">
+    <div id="textoutput"></div>
+    <p>Huomaa että:<br/>
+    $ajax - sekä lähettää että vastaanottaa dataa<br/>
+    $post - vain lähettää dataa tekstitiedostoon<br/>
+    $get - vain vastaanottaa dataa tekstitiedostosta</p>
+</body>
+</html>
