@@ -1,0 +1,32 @@
+"Old School" -tyylinen puolivalmis Java Web -asiakasrekisteri joka on toteutettu JSP-sivuilla
+ja servleteillä sekä perinteisellä JDBC-tietokantayhteydellä. Tätä sovellusta käytetään pohjana 
+Tehtävät1:n tehtävissä 4,5,6 ja 7.
+
+Tee uusi projekti ja kopioi src-ja web-kansioiden sisällät sinne:
+
+1. File->New Project->Java Web->Web Application
+
+2. Projektin nimeksi vaikka: Asiakasrekisteri
+
+3. Server: GlassFish 4, JavaEE version: Java EE6 Web
+
+4. Ei oteta käyttöön Frameworkkeja, paina Finish
+
+
+Valmiissa projektissa mene Files-näkymään. Siellä näet src- ja web-kansiot joihin
+kopioit esimerkissä olevat sisällöt.
+
+-src-kansioon tulevat Servletit ja tavalliset luokat
+-web-kansioon tulevat JSP-sivut, HTML-sivut, CSS:t, Javascriptit, kuvat yms. www-elementit
+
+asiakkaat.sql -tiedostossa ovat asiakkaat -taulun ja yhden asiakkaan luontikomennot. Katso tiedostosta
+asiakkaan email ja salasana joilla voit kirjautua sisään sovellukseen.
+
+Tietokantapohjaisia sovelluksia ei tehdä JavaEE:llä tähän tyyliin enää juuri koskaan, sillä yleensä kaytetään
+apuna mitä erilaisimpia sovelluskehyksiä, joiden avulla tämäntyyppinen sovellus voidaan tehdä
+arkkitehtuurin puolesta järkevämmin ja usein myäs vähemmällä koodilla.
+
+Sovellus on kuitenkin hyvä esimerkki Servlettien ja JSP-sivujen perustoiminnasta mikä on hyvä 
+ymmärtää sillä niitä käytetään edelleen esim. monissa sovelluskehyksissä.
+
+    
