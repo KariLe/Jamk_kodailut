@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World, AngularJS - ViralPatel.net</title>
+<script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="" ng-controller="ContactController">
+    <form>
+    <label>Name</label> 
+        <input type="text" name="name" ng-model="newcontact.name"/>
+    <label>Email</label> 
+        <input type="text" name="email" ng-model="newcontact.email"/>
+    <label>Phone</label> 
+        <input type="text" name="phone" ng-model="newcontact.phone"/>
+        <br/>
+        <input type="hidden" ng-model="newcontact.id" />
+     <input type="button" value="Save" ng-click="saveContact()" />
+    </form>
+<table>
+<thead> 
+<tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="contact in contacts">
+    <td>{{ contact.name }}</td>
+    <td>{{ contact.email }}</td>
+    <td>{{ contact.phone }}</td>
+    <td>
+        <a  href="#" ng-click="edit(contact.id)">edit</a> | 
+        <a href="#" ng-click="delete(contact.id)">delete</a>
+    </td>
+ </tr>
+</tbody>
+</table>    
+</div>
+<script type="text/javascript">
+    function ContactController($scope) {
+        $scope.contacts = ["hi@email.com", "hello@email.com"];
+ 
+        $scope.add = function() {
+        $scope.contacts.push($scope.newcontact);
+        $scope.newcontact = "";
+        }
+    }
+</script>
+</body>
+</html>

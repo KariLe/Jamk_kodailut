@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS: Shopping List Application</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+
+  <body>
+<div class="container" ng-controller="ShopCtrl">
+  <h1>My Shopping List</h1>
+  <div class="main">
+    <ul class="unstyled">
+      <li ng-repeat="item in items">
+        <input type="checkbox" id="item-{{item.id}}" ng-model="item.bought">
+        <label for="item-{{item.id}}" class="{{isBought(item.bought)}}">{{item.text}}<span></span></label>
+      </li>
+    </ul>
+    <form class="form-horizontal" ng-submit="addItem()">
+      <input type="text" ng-model="itemEntry" placeholder="Type and hit Enter to add item">
+    </form>
+  </div>
+
+  <div class="footer">
+    <button class="btn btn-large btn-danger" ng-click="clearBought()">Remove Bought</button>
+  </div>
+</div>
+
+  </body>
+</html>
