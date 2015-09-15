@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--JQuery mobilessa sivuston ulkoasu luodaan HTML5:llä ja CSS3:lla
+    käyttäen data-role -attribuutteja. Toiminnallisuus tehdään JS:llä. 
+    JQuery on mukana joten sen käyttö on luontevaa, mutta kaikenlaisia
+    JS-kirjastoja ja myös puhdasta JS:ää voi käyttää, kuten tietysti myös 
+    HTML5:n JS API-rajapintoja. 
+
+    JQuery Mobile sivuilla voi tietysti käyttää myös PHP:tä ja muita upotetettavia 
+    palvelinpuolen skriptikieliä, mutta sovelluksen arkkitehtuurin kannalta palvelin- 
+    ja asiakaspuolen kielet olisi tietysti hyvä pitää erillään. -->
+
+<html>
+    <head>
+        <title></title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+         <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+         <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+         <script type="text/javascript">
+            /*
+             * Tämä JS-tiedosto voisi olla myös ulkoinen tiedosto.
+             * Sitten kun lisäät tähän kaikki toiminnot, tästä tulee
+             * niin pitkä että ei näytä siistiltä HTML-dokumentin 
+             * sisällä. 
+             */
+
+            /*
+             * JQuery-mobilessa ei käytetä alkulatauksessa JQueryn 
+             * $(document).ready -metodia vaan 
+             * $(document).bind -metodia
+             * 
+             * 
+             */
+            
+            // contact
+            /*
+            function Contact(fName, lName, eMail, id) {
+            this.fName = fName;
+            this.lName = lName;
+            this.eMail = eMail;
+            this.ContactId = id;
+            this.toJsonString = function () { return JSON.stringify(this); };
+
+            };
+            */
+            
+            $(document).bind('pageinit', function() {
+
+                   function getData() {
+                   /*
+                    * Ajax -toiminto joka hakee dataa Laravel-REST-APIlta.
+                    * Malliksi tässä on haettu vain yksi url-osoite
+                    */
+                    $.ajax({
+                        type: "GET",                        
+                        url: "http://localhost/laravel_harj9/public/index.php/api/v1/url/1",
+                        //data: data,
+                        dataType: "json",
+                        success: function(data) {
+                            //laitetaan haettu data sen elementin väliin jonka id="text"
+                            $("#text").html(data.urls[0].url);
+                            }
+                    });
+                   }
+                   
+                    getData(); //aina kun sivu avataan haetaan kannasta tiedot sivulle
+
+                    //lisaa linkin 
+                    $("#lisaa_linkki_nappi").click(function() {
+         
+
+                    jQuery.ajax({
+                            type: "POST",
+                            url: "http://localhost/laravel_harj9/public/index.php/api/v1/url/1",
+                            data: {
+                                nimi: $("#link1").contents(),
+                                kuvaus:$("#desc1").contents()                                
+                            },
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (data) {
+                                getData();
+                                                }
+                            });
+    });
+       })
+                    
+       /*
+                    
+                    //poistaa linkin
+                    $("#poista_linkki_nappi").click(function() {
+                        function deleteContact (contactId) {
+
+                        jQuery.ajax({
+                                 type: "DELETE",
+                                 url: "http://localhost/laravel_harj9/public/index.php/api/v1/url",
+                                 contentType: "application/json; charset=utf-8",
+                                 data: JSON.stringify(contactId),
+                                 dataType: "json",
+                                 success: function (data) {
+                                     getData();  
+           }
+        });
+                        
+                        
+                    //muokkaa linkkiä
+                    $("#muokkaa_linkki_nappi").click(function() {
+                        function updateContact (contact) {
+
+                        jQuery.ajax({
+                            type: "PUT",
+                            url: "http://localhost/laravel_harj9/public/index.php/api/v1/url",
+                            contentType: "application/json; charset=utf-8",
+                            data: contact.toJsonString(),
+                            dataType: "json",
+                            success: function (data) {
+                                getData();
+           }
+                             
+                    
+    });       
+    */
+                            
+</script>
+
+
+    </head>
+
+    <body>
+        <div data-role="page">
+
+            <div data-role="header">
+                <h1>The LinkkiLista</h1>
+            </div>
+
+            <!--Tähän haetaan ajaxilla dataa JSON -tiedostosta -->
+            <div data-role="content">
+                <p id="text"></p>
+            </div>
+
+
+            <!-- Näille lomakkeille pitäisi tehdä Ajax-toiminnot-->           
+
+
+                <fieldset data-role="collapsible" data-theme="b" data-content-theme="d">
+                    <legend>Lisää linkki</legend>
+                    <input type="text" value="http://" name="link1" id="link1" />
+                    <input type="text" placeholder="Linkin kuvaus" value="" name="desc1" id="desc1" />
+                    <input type="submit" id="lisaa_linkki_nappi" value="Lisää linkki" data-icon="star" data-theme="d"/>
+                </fieldset>
+
+                <fieldset data-role="collapsible" data-theme="b" data-content-theme="d">
+                    <legend>Muokkaa linkkiä</legend>
+                    <input type="text" name="name" placeholder="Linkin id" value="" id="put" />
+                    <fieldset data-role="collapsible" data-theme="b" data-content-theme="d">
+                        <legend>Muokkaa linkkiä</legend>
+                     <input type="text" value="http://" name="link2" id="link2" />
+                    <input type="text" placeholder="Linkin kuvaus" value="" name="desc2" id="desc2" />
+                    <input type="submit" id="muokkaa_linkki_nappi" value="Muokkaa linkkiä" data-icon="star" data-theme="d"/>
+                    </fieldset>
+                    
+                </fieldset>
+
+                <fieldset data-role="collapsible" data-theme="b" data-content-theme="d">
+                    <legend>Poista linkki</legend>
+                    <input type="text" name="name" placeholder="Linkin id" value="" id="del" />
+                    <input type="submit" id="poista_linkki_nappi" value="Poista linkki" data-icon="star" data-theme="d"/>
+                </fieldset>
+
+
+
+            <div data-role="footer">
+                <h4>Ticorpotate 2013</h4>
+            </div>
+
+        </div>
+
+    </body>
+</html>
