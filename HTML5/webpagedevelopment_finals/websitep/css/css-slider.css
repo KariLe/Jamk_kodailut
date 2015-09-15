@@ -1,0 +1,185 @@
+/*
+* Sis‰lt‰‰ kaikkien sivujen tyylim‰‰rittelyt
+*
+*
+*
+*/
+
+
+body 
+{
+font-family:"Arial", Arial, Sans-serif;
+position:relative;  
+padding: 0;
+background: #fff;
+margin: 0px auto;
+overflow-y: scroll; /* Pakottaa sivulle scrollin */
+}
+
+#header
+ {
+position:relative;
+width:845px;
+height:20px;
+padding: 20px;
+color: #fff;
+margin: 0px auto;
+}	
+
+/*
+ * div jossa kuvalaatikko sijaitsee 
+ */
+#slider
+ {
+margin: 0px auto;
+width: 845px;
+top: 65px;
+height: 200px;
+position: relative;
+overflow: hidden;
+box-shadow: 0px -10px 15px #222;
+background: #fff;
+}
+
+/* 
+ * Kuvalaatikon kuvien m‰‰rittely ja vaihto 
+ *
+ *
+ * Kuvat sijaitsevat ensin 200 pikseli‰ piilossa divin yl‰puolella ja 
+ * laskeutuvat sitten alas kun k‰ytt‰j‰
+ * vaihtaa kuvaa .slider-navin nappuloista.
+ */
+#slider [id^='image']:target img
+{
+top: 0;  
+left: 0;
+}
+
+#slider [id^='image']:target a
+{
+background: #000;
+border: 3px solid #333;
+width: 10px;
+height: 10px;
+}
+
+#slider [id^="image"] img 
+{
+position: absolute;
+top: -200px;
+border: 0;
+-moz-transition: top 0.5s ease-in;                  /* Aika, jossa kuvat valuvat esiin., ease-in "pehment‰‰" esiin tuloa. esim ease-in nopeuttaa objektin esiin tuloa loppua kohden*/
+-ms-transition: top 0.5s ease-in;                    
+-webkit-transition: top 0.5s ease-in;                
+-o-transition: top 0.5s ease-in;                     
+}
+/* 
+ * Kuvalaatikon pienet laatikot joilla valitaan kuva ja linkki
+ */
+.slider-nav 
+{
+background: #fff;
+width: 14px;
+z-index: 9999;
+height: 14px;
+box-shadow: inset 0px 0px 10px rgba(255,0,0,0.3), 5px 5px 10px rgba(255,0,0,0.4); /*insetill‰ sis‰‰np‰in "varjo", toisella ulosp‰in*/
+border-radius: 1px;
+position: absolute;
+bottom: 150px;
+}
+/* 
+ * Pienten laatikoiden sijainti toisistaan.
+ */
+#image-1 .slider-nav 
+{
+right: 80px;
+}
+#image-2 .slider-nav
+{
+right: 60px;
+}
+
+#image-3 .slider-nav 
+{
+right: 40px;
+}
+
+#image-4 .slider-nav
+{
+right: 20px;
+}
+/*
+ * Viivojen muotoilu
+ */
+hr
+{
+border: 0;
+color: #9E9E9E;
+background-color: #9E9E9E;
+height: 1px;
+width: 100%;
+text-align: left;
+box-shadow: 0 0 20px #222;
+}
+/* 
+ * Sis‰llˆn otsikkoalueen muotoilu
+ */
+#sisalto_header
+{
+width:845px;
+position:relative;
+background:rgba(2, 0, 0, 0.1);
+margin: 0 auto;
+}
+/* 
+ * artikkeleiden muotoilu 
+ */
+#article1
+{
+text-align:left;
+
+}
+#article2
+{
+background:rgba(2, 0, 0, 0.1);
+text-align:left;
+
+}
+/* 
+ * Sis‰llˆn muotoilu
+ */
+#sisalto
+{
+top:50px;
+width:845px;
+position:relative;
+margin: 0 auto;
+text-align:center;
+}
+/* 
+ * Listojen muotoilu
+ */
+#tiedot, li
+{
+list-style:none;
+
+}
+/* 
+ * Kappaleiden muotoilu
+ */
+p
+{
+border-style:solid;
+border-top:5px;
+border-bottom:5px;
+border-color:#BDC3C9;
+}
+footer
+{
+text-align:center;
+position:relative;
+width:845px;
+height: 20px;
+margin: 0 auto;
+margin-top:100px;
+}

@@ -1,0 +1,187 @@
+#container
+{
+position:relative;
+width:960px;
+margin: 0 auto;
+}
+body
+{
+font-family:"Arial", Arial, Sans-serif;
+overflow-y:scroll;
+background-image:url('../img/tausta2.jpg');
+background-color:#051829;
+}
+
+
+header
+{
+
+position:relative;
+width:960px;
+height:200px;
+}
+#logodiv
+{
+float:left;
+height:150px;
+width:150px;
+}
+#valilehdet
+{
+position:relative;
+width:810px;
+height:50px;
+float:right;
+}
+.tablist
+{
+list-style:none;
+height:100%;
+padding:0;
+margin-top:30px;
+border:none;
+}
+.tablist li
+{
+float:left;
+margin-right:5px;
+}
+.tablist li a
+{
+border-top-right-radius:10px;
+border-top-left-radius:10px;
+display:block;
+padding:0 1em;
+text-decoration:none;
+border:0.06em solid #000;
+border-bottom:0;
+color:#000;
+background-color:#988466;
+font:bold 0.88em/2em;
+}
+.tablist li a:hover
+{
+    background:#d9bc92; 
+    color:#fff;
+    text-decoration:none;
+}
+.tablist li#current a {
+    background-color: #d9bc92;
+    color: #000;
+}
+.tablist li#current a:hover {
+    background: #d9bc92;
+}
+
+
+#banneriteksti
+{
+background-image:url('img/yla_banneri.jpg');
+background-color:#d9bc92;
+border-bottom-right-radius: 10px;
+border-top-right-radius:10px;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+margin-top:75px;
+float:right;
+position:relative;
+width:810px;
+height:75px;
+-moz-box-shadow: 0px 0px 20px 5px #000000;
+-webkit-box-shadow: 0px 0px 20px 5px #000000;
+box-shadow: 0px 0px 20px 5px #000000;
+text-align:center;
+font-style:italic;
+}
+#vasennavi
+{
+position:fixed;
+margin-top:200px;
+float:left;
+width:150px;
+display:none;
+}
+.navilist
+{
+list-style:none;
+height:100%;
+padding:0;
+margin-top:30px;
+border:none;
+
+}
+.navilist li
+{
+float:left;
+margin-right:0px;
+
+}
+.navilist li a
+{
+display:block;
+padding:0 1em;
+text-decoration:none;
+border:0;
+border-bottom:0;
+color:#000;
+background-color:#d9bc92;
+font:bold 0.88em/2em;
+
+}
+.navilist li a:hover
+{
+    background:#988466; 
+    color:#fff;
+    text-decoration:none;
+}
+.navilist li#current a {
+    background-color: #E60039;
+    color: #fff;
+}
+.navilist li#current a:hover {
+    background: #39C;
+}
+article
+{
+padding-left:20px;
+padding-right:20px;
+}
+hgroup
+{
+padding-left:20px;
+padding-right:20px;
+}
+
+
+#sisalto
+{
+border-bottom-right-radius: 10px;
+border-top-right-radius:10px;
+border-top-left-radius:0px;
+border-bottom-left-radius:10px;
+background-image:url('../img/weathered_paper3.jpg');
+background-color:#d9bc92; 
+background-repeat:x;
+/*-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 20px 5px #000000;
+-webkit-box-shadow: 0px 0px 20px 5px #000000;
+box-shadow: 0px 0px 20px 5px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+/*IE 7 AND 8 DO NOT SUPPORT SPREAD PROPERTY OF SHADOWS*/
+float:right;
+width:810px;
+
+}
+
+#footer
+{
+float:bottom;
+margin-left:150px;
+width:960px;
+height:50px;
+}
+
+

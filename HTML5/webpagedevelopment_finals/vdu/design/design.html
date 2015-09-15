@@ -1,0 +1,888 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset=utf-8>
+    <title>VISUAALINEN DESIGN JA KÄYTETTÄVYYS</title>
+</head>
+<body>
+<div id="container">
+    <header>
+	 <div id="logodiv">
+	 <a href="../../index.html">
+	 <img src="../img/stamp.png" alt="logo"  border=0 />
+	 </a>
+	 </div>
+	 <div id="banneriteksti">
+     <h1></h1>
+	 </div>
+        <nav>
+			<div id="vasennavi">       
+			<ul class="navilist">
+                <li><a href="#elementit">ELEMENTIT</a></li>
+				<li><a href="#viivat">Viivat</a></li>
+				<li><a href="#muoto">Muoto</a></li>
+				<li><a href="#tekstuuri">Tekstuuri</a></li>
+				<li><a href="#vari">Vari</a></li>
+				<li><a href="#suunta">Suunta</a></li>
+				<li><a href="#periaatteet">PERIAATTEET</a></li>
+				<li><a href="#tasapaino">Tasapaino</a></li>
+				<li><a href="#kontrasti">Kontrasti</a></li>
+				<li><a href="#korostus">Korostus</a></li>
+				<li><a href="#rytmi">Rytmi</a></li>
+				<li><a href="#yhtenaisyys">Yhtenäisyys</a></li>
+				<li><a href="#gestalt">GESTALT</a></li>
+				<li><a href="#sulkeutuvuus">Sulkeutuvuus</a></li>
+				<li><a href="#hahmomaa">Hahmomaa</a></li>
+				<li><a href="#laheisyys">Läheisyys</a></li>
+				<li><a href="#samankaltaisuus">Samankaltaisuus</a></li>
+				<li><a href="#jatkuvuus">Jatkuvuus</a></li>
+				<li><a href="#webguide">WEBGUIDE</a></li>
+				<li><a href="#kayttoliittyma">Käyttöliittymä</a></li>
+				<li><a href="#rakenne">Rakenne</a></li>
+				<li><a href="#trakenne">Tiedostorakenne</a></li>
+				<li><a href="#yllapidettavyys">Ylläpidettävyys</a></li>
+				<li><a href="#Semantiikka">Semantiikka</a></li>
+				<li><a href="#rakenne2">Rakenne2</a></li>
+				<li><a href="#">Alkuun</a></li>
+            </ul>
+			</div> 
+			<div id="valilehdet">
+            <ul class="tablist">
+                <li><a href="../index.html">ETUSIVU</a></li>
+                <li id="current"><a href="design.html">DESIGN</a></li>
+				<li><a href="../usability/usability.html">KÄYTETTÄVYYS</a></li>
+            </ul>
+			</div>
+        </nav>
+    </header>
+	 <section>
+	 <div id="sisalto">
+	 
+     <hgroup>
+         <h1>SUUNNITTELUN ELEMENTIT</h1>
+     </hgroup>
+     <article>
+        
+
+<p id="elementit">
+Suunnittelun elementit ovat designin rakennuspalikoita. Jokainen sivu muodostuu
+näistä elementeistä. Kun ymmärtää peruselementit, pystyy perustamaan tehokkaampia
+nettisivuja.
+</p>
+
+Viisi peruselementtiä ovat:
+
+
+<h2 id="viivat">Viivat ja viivatyö</h2>
+
+<p>
+Viivoihin sisältyvät reunat, borderit, ja säännöt, rules. Ne voivat olla horisontaalisia
+tai vertikaalisia ja auttavat erottamaan alueet elementtien ympärillä. Viivatyö
+helpottaa nettisivun luettavuutta.</p>
+
+
+Viivoja voidaan käyttää moneen tarkoitukseen:
+<ul>
+<li>Borderina elementtien ympärillä</li>
+<li>Elementit jakavana viivana</li>
+<li>Ääriviivana elementin ympärillä</li>
+<li>Koristeena</li>
+</ul>
+
+Viivojen lisäys nettisivuihin:
+
+<ul>
+<li>&lt;HR&gt; tagi lisää horisontaalisen viivan. Sitä voidaan sitten tyylitellä cssllä.</li>
+<li>Cssllä voidaan lisätä monella tapaa bordereita elementteihin.</li>
+<li>Kuvia voidaan käyttää viivoina ja linjoina sekä bordereina luodessa enemmän koristeellista designia.</li>
+</ul>
+
+
+<h2 id="muoto">Muoto</h2>
+<p>
+Muodot tekevät minkä tahansa ympäröidyn piirteen suunnittelussa. Useimmilla nettisivuilla
+muodot ovat neliöitä tai neliskanttisia. Mutta niiden ei tarvitse olla. Voit käyttää kuvia luodaksesi
+erilaisia muotoja.
+<br/>
+Muotojen on kolmea päätyyppiä:</p>
+<ul>
+<li>Geometrisia muotoja</li>
+<li>Luonnollisia muotoja</li>
+<li>Abstrakteja muotoja</li>
+</ul>
+
+Muotoja voidaan käyttää monella tapaa designissa:
+
+<ul>
+<li>Lisätä mielenkiintoa designiin</li>
+<li>Ylläpitää mielenkiintoa</li>
+<li>Organisoida ja erottaa elementtejä</li>
+<li>Ohjata silmää läpi designin</li>
+</ul>
+<p>
+Geometriset muodot:<br/>
+
+Useimmat geometriset muodot nettisivuilla luodaan layout tai css:ssän avulla. Yleisimpiä geometrisia muotoja webissä ovat:
+</p>
+<ul>
+<li>Neliöt ja nelikulmiot</li>
+<li>Ympyrät</li>
+<li>Kolmiot</li>
+<li>Timantit</li>
+</ul>
+<p>
+Luonnolliset muodot:<br/>
+
+Luonnollisia muotoja on niin luonnosta löytyviä kuin ihmisen tekemiäkin. Useimmat 
+luonnollisista muodoista webissä on luotu kuvilla. Joitakin esimerkkejä luonnollisista muodoista:
+</p>
+<ul>
+<li>Lehdet</li>
+<li>Lammikot</li>
+</ul>
+<p>
+Abstraktit muodot:
+
+Abstraktit muodot ovat sellaisia joilla on tunnistettava muoto mutta ne eivät ole "todellisia"
+samalla tavalla kuin luonnolliset muodot. Esimerkiksi, tikku-ukko piirros koirasta
+on abstrakti koiran muoto, mutta toinen koira valokuvassa on luonnollinen muoto. 
+Abstraktit muodot web designissa on yleensä lisätty kuvien avulla. 
+</p>
+Esimerkkejä:<br/>
+
+<ul>
+<li>Aakkossymbolit</li>
+<li>Ikonit</li>
+<li>Symbolit</li>
+</ul>
+
+
+<h2 id="tekstuuri">Tekstuuri</h2>
+<p>
+Tekstuuri antaa designille tunteen pinnasta. Tekstuurit ovat kokonaan visuaalisia, mutta
+voit käyttää luonnollisia tai tehtyjä tekstuureja saadaksesi halutun efektin sivuille.
+<br/>
+Joitakin yleisiä tekstuureja:
+</p>
+<ul>
+<li>Rosoinen</li>
+<li>Kova</li>
+<li>Sileä</li>
+<li>Pehmeä</li>
+</ul>
+<p>
+Tekstuureita voidaan käyttää monin tavoin:
+</p>
+<ul>
+<li>Taustoina</li>
+<li>Korostukseen</li>
+<li>Tyylitellyissä designeissa kuten kaiverruksissa ja etsauksissa</li>
+</ul>
+<p>
+Kuinka lisätä tekstuureja web designiin:
+<br/>
+Yleisin tapa lisätä tekstuureja web designiin on käyttää css background-image tyyli määrittelyä. Background imageja voi laittaa useimpiin blockeihin, jonka avulla voi lisätä tekstuuria nettisivuun.
+Myös sellaisilla kohdilla mille ei ole laitettu omaa backgroundia voi olla oma tekstuuri.
+Esimerkiksi jokaisessa kuvassa on oma tekstuuri kuvan sisällä. Lisäksi elementit voivat yhdessä näyttää teksturoidulta.
+</p>
+
+
+<h2 id="vari">Väri</h2>
+<p>
+Väri on yksi design elementti josta useimmat nettisivujen suunnittelijat ovat kovasti tietoisia.
+Muista kuitenkin, että väri ei ole vaadittu elementti missään designissä.
+Hyvä suunnitelma on suunnitella design ensin ilman väriä ja vasta sitten lisätä mahdollisimman 
+vähän väriä ehostamaan designia.
+</p>
+<p>
+Värin käyttö designissa:
+</p>
+<ul>
+<li>taustoina</li>
+<li>teksti ja etuala</li>
+<li>kuvat</li>
+<li>korostukset</li>
+</ul>
+<p>
+Kuinka lisätä väriä:
+<br/>
+Väriä on todella helppo lisätä sivuille. On monta tyylin määrittelyä joilla voidaan lisätä värejä, kuten:
+</p>
+<ul>
+<li>color: - etualan väriksi, kuten fontteihin ja tekstiin.</li>
+<li>background-color: - muuttaa taustan väriä.</li>
+<li>border-color: - muuttaa borderin väriä.</li>
+</ul>
+<p>
+Väriä voi lisätä myös kuvien kautta/avulla. JPEG kuvia valokuviin ja miljoonavärisiin kuviin ja 
+GIF tiedostoja tasaisiin väreihin.
+</p>
+
+<h2 id="suunta">Suunta</h2>
+<p>
+Suunta antaa nettisivuille liikkeen. Useimmissa designeissa on liikkeen tunnetta koko designin alalta.
+Hyvä design ohjaa silmää tarkoituksenmukaisesti, jotta katsoja näkee mitä suunnittelija haluaa.
+<br/>
+Designissa on kolme perus suuntaa:
+</p>
+<ul>
+<li>Horisontaalinen, vaaka</li>
+<li>Vertikaalinen, pysty</li>
+<li>Diagonaalinen, vino</li>
+</ul>
+
+Suunnan käyttö designissa:
+<ul>
+<li>Web designissa suuntaa esittävät yleensä sivujen kuvat.</li>
+<li>Suuntaa voi määrätä elementtien sijoittelulla sivuilla ja viivoilla, etenkin jos niissä on nuolen päät.</li>
+</ul>
+<p>
+Suunnan lisäys nettisivuille:
+<br/>
+Katso lisäämisiäsi kuvia päättääksesi mihin päin kohteet ovat. Jos kohteet katsovat  oikealle sinun pitäisi lisät kuva vasemmalle puolelle sivua. Muutoin valokuvan silmien suunta ohjaa lukijan katseen pois sivuilta.
+Käytä layouttiasi vihjaamaan suuntaa. Asettele tiheät elementit, kuten valokuvat, pysty vaaka tai vino suuntaisessa linjassa. Kun taas vähemmän tiheät ympäröimään edellä mainittuja.
+Käytä viivoja, joko kuvia tai &lt;HR&gt; tageja, ohjaamaan liikettä ja suuntaa.
+</p>
+     </article>
+	  <hgroup>
+         <h1 id="periaatteet">DESIGNIN PÄÄPERIAATTEET</h1>
+     </hgroup>
+     <article>
+Designin pääperiaatteet ovat samat kaikille Web designeille kuten myös muille designeille.
+ Ne näyttävät miten laitetaan yhteen design elementtejä tehokkaalla tavalla.
+ Design on muutakin kuin vain HTML tagien lyöntiä sivuille, 
+ ja käyttämällä näitä pääperiaatteita saat helposti enemmän tyydyttäviä ja käytännöllisiä designeja.
+
+<h2 id="tasapaino">Tasapaino</h2>
+
+Tasapaino on kevyiden ja raskaiden elementtien jakoa sivuille. Isot tummat elementit näyttävät raskaammilta kuin pienet ja vaaleat. Tasapainon periaate näyttää miten asetella sivut niin että ne toimivat.
+
+Designia voidaan tasapainottaa kolmella tavalla:
+<ul>
+<li>Symmetrisellä tasapainolla</li>
+<li>Epäsymmetrisellä tasapainolla</li>
+<li>Ristiriitaisuudella tai epätasapainolla</li>
+</ul>
+Tasapainon käyttö designissa:
+<br/>
+<p>
+Web designissa tasapaino löytyy layoutista. Elementtien sijoittelu päättää kuinka tasapainoiselta sivut näyttävät.
+Yksi suuri haaste kun yritetään saavuttaa visuaalinen balanssi on taitto. 
+Layoutin voi suunnitella niin että ensi katselmus on hyvin tasapainossa, 
+mutta kun lukija rullaa sivua, se voi menettää tasapainonsa.
+</p>
+Tasapainon käyttö Web designissa:
+<br/>
+<p>
+Yleisin tasapainon sisällöittäminen web designiin tapahtuu layotilla. 
+Voit käyttää myös floattia sijoittaaksesi elementit ja tasapainottaaksesi ne sivulle.
+Yleinen tapa on keskittää teksti ja/tai muut elementit keskelle sivua. 
+</p>
+<p>
+Useimmat sivut on rakennettu ristikko systeemin päälle ja tämä luokin heti tasapainon tunnetta sivuille.
+ Asiakkaat pystyvät näkemään ristikon vaikkei olisikaan näkyviä viivoja. 
+ Lisäksi nettisivut ovat oikein käypiä grip systeemille (esim. 960gs.com) niiden neliön muotoisen luontonsa vuoksi.
+</p>
+Symmetrinen balanssi
+<br/>
+<p>
+Symmetria saavutetaan sijoittamalla elementit erittäin tasaväkisesti muiden
+kanssa Jos oikealla puolella on iso raskas elementti, sijoitetaan vastaavanlainen vasemmalle puolella.
+Keskittäminen o n helpoin tie saada symmetrinen sivu. Kannattaa tosin varoa ettei tämä tee designista liian 
+tasaista tai tylsää.  Jos haluaa symmetriaa on parempi luoda balanssia eri elementeillä kuten kuva vasemmalle
+ja iso blockki tekstiä oikealle siitä.
+</p>
+Epäsymmetrinen balanssi
+<p>
+Elementit eivät matchaa designin keskiviivalla. Esim. 
+voi olla iso elementti sijoitettuna todella lähelle designin keskiviivaa.
+ Saadakseen tämän epäsymmetriseen balanssiin, voidaan sijoittaa pieni elementti 
+ kauemmaksi keskiviivasta. Tätä voidaan kuvitella keinulautana, pienempi elementti
+ tasapainottaa raskaamman kun se sijoitetaan kauemmas painovoiman keskipisteestä.
+ Myös väriä ja tekstuureita voidaan käyttää asymmetrian luonnissa.
+</p>
+Ristiriitaisuus ja epätasapaino
+<p>
+Joskus designin tarkoitus tekee epätasapainoisesta designista toimivaa. 
+Epätasapainoiset designit vihjailevat liikkeestä ja toiminnasta.
+Ne tekevät ihmisille epämukavuuden tunteita. 
+Jos designisi sisältö yrittää saada ihmiset ajattelemaan tai epämukaviksi oloiltaan,
+ristiriitaisuus ja epätasopaino voivat toimia hyvin.
+</p>
+
+<h2 id="kontrasti">Kontrasti</h2>
+<p>
+Voit käyttää vastakohtaisia muotoja (ympyrä vs. neliö), tai vastakohtaisia kokoja (iso vs. pieni),
+tai vastakohtaisia tekstuureja (sileä vs. rosoinen).
+</p>
+Mitä on kontrasti designissa:
+<br/>
+<p>
+Kontrasti designissa on elementtien erojen painottamista.
+ Usein ajatellaan kontrastin liittyvän vain väreihin, mutta se toimii yhtä hyvin kaikkien design elementtien kanssa.
+ Esim. jos sinulla on joukko viivoja jotka ovat saman pituisia niissä ei ole kontrastia.
+ Mutta jos yksi on pidempi muita se luo kontrastia.
+</p>
+<p>
+Kontrastin käyttö designissa:
+<br/>
+Käyttäessäsi kontrastia, ajattele väriä pidemmälle. Väri kontrasti on helposti ylilyötyä. 
+Hienovaraisempiin kontrastin käyttöihin käyvät fontti koot, layotin muodot, kuvat, ja teksti tyylit ()
+ kuten listat vs. pitkät proosat).
+</p>
+<p>
+Kuinka käyttää kontrastia web designissa:
+<br/>
+Kontrastia voidaan käyttää web designissa monella tavalla:
+<br/>
+Muuta fontit. Fontin koko, paino ja tyyppi voivat kaikki tuoda kontrastia tekstiin. Otsakkeet luovat paljon kontrastia muuhun tekstiin.
+Linkit lisäävät hyvin kontrastia tekstiin. Värin vaihto ja alaviiva erottavat linkit helposti muusta tekstistä.
+Käytä erikokoisia kuvia ja elementtejä. Tee tärkeästä tekstin pätkästä isompi kuin sen ympärillä olevat elementit. 
+Käytä vastavärejä ja muuta väriesi kirkkautta.
+</p>
+
+<h2 id="korostus">Korostus</h2>
+
+Suunnittelijana sinun pitäisi päättää sivun hierarkia ja sitten lisätä korostusta sivuille tämän hierarkian perusteella.
+
+Korostus designissa:
+
+Korostus luo polttopisteen nettisivuun.
+Sillä saadaan tärkein elementti erotettua muusta designista. Korostusta sanotaankin joskus dominanssiksi.
+
+Korostuksen käyttö designissa:
+
+Älä yritä saada kaikkea erottumaan yhtä aikaa, se saa sivut näyttämään kiireisiltä, tylsältä ja epäviehättävältä.
+Sen sijaan, pyri luomaan visuaalinen hierarkia designiisi.
+Jos yritä luoda semanttista flowta HTMLlääsi, se on helpompaa. 
+Kun sivuillasi on jo hierarkia sinun täytyy vain painottaa oikeita elementtejä - 
+kuten H1 elementtiä isoimmalle painostukselle jne. 
+	
+Korostuksen sisällyttäminen web designiin:
+<ul>
+<li>Käytä semanttisia tageja (&lt;H1&gt;, &lt;P&gt;, &lt;OL&gt;, &lt;UL&gt;, &lt;B&gt;, &lt;I&gt;, &lt;STRONG&gt;, &lt;EM&gt;).</li>
+<li>Muuta fonttien tai kuvien kokoa säädelläksesi korostusta.</li>
+<li>Käyttämällä kontrastoivia värejä. </li>
+</ul>
+
+<h2 id="rytmi">Rytmi</h2>
+
+Kutsutaan myös toistoksi. Rytmi tuo sisäistä jatkuvuutta designiin. 
+Ihminen ymmärtää helposti kuvioita ja toisto luo kuvioita jotka tekevät sivuista helpommin ymmärrettäviä.
+
+Rytmin käyttö designissa:
+
+Melkein mitä tahansa web designissa voidaan toistaa ja näin luoda rytmiä designiin. 
+Voit toistaa otsaketta monta kertaa luodaksesi korostusta, toistaa kuvaa, luoda kaavamaisia taustoja, 
+tai toistaa samaa tyyliä nettisivun alasivuilla.
+
+Rytmin lisäys web designiin:
+
+Rytmiä voidaan lisätä monin tavoin:
+<ul>
+<li>Toista tekstiä.</li>
+<li>Käytä samoja kuvia monessa kohdassa.</li>
+<li>Käytä background-repeat CSS tyylissä toistaaksesi taustaa ylä- tai alasuunnassa.</li>
+<li>Toista designisi navigointi elementtejä sivujen kesken.</li>
+</ul>
+
+
+<h2 id="yhtenaisyys">Yhtenäisyys</h2>
+
+Kutsutaan myös läheisyydeksi. 
+Periaate jolla pidetään samankaltaiset elementit lähekkäin ja erilaiset erillään toisista.
+Yhtenäisyys vetää elementtejä yhteen.
+
+Yhtenäisyyden käyttö designissa:
+
+Yhteneväisyys saavutetaan enimmäkseen layoutin sijoittamisella. 
+Mutta se voidaan saavuttaa myös margin ja padding muunnoksilla.
+Toinen tapa käyttää yhteneväisyyttä on erottaa tekstit omiin ryhmiin käyttäen otsakkeita.
+Otsake luo visuaalista kontrastia ja kun sen ryhmittää tekstin kanssa, se on selvästi suoraan yhteydessä sisältöön.
+
+Kuinka sisällyttää yhtenäiyys web designiin:
+<ul>
+<li>Säädä elementtien layouttia sijoittaaksesi ne lähelle tai kauas toisistaan.</li>
+<li>Muuta riviväliä.</li>
+<li>Kikkaile marginin ja padding kanssa.</li>
+</ul>
+</article>
+<hgroup>
+<h1 id="gestalt">GESTALTIN DESIGN LAIT</h1>
+</hgroup>
+<article>
+
+<h2 id="sulkeutuvuus">Sulkeutuvuuden laki</h2>
+
+<p>Ihmismieli pyrkii sulkemaan avoimet rakenteet ja aukot, vaikkei meillä ole täydellistä tietoa muodosta.
+Esimerkkinä F1 logo, jossa numero yksi muodostuu mielessämme, sen ympärillä olevien reunojen perusteella.</p>
+<img src="http://i292.photobucket.com/albums/mm30/posters_ff/sports/f1_grand_prix_logo.jpg" alt="F1" />
+
+
+<h2 id="hahmomaa">Hahmo-maa laki</h2>
+
+<p>Pyrimme organisoimaan näköhavainnot erottaaksemme hahmot maasta. Mieli voi nähdä asiat kahtena eri muotona, mutta pystyy keskittymään vain toiseen kerrallaan.
+Esimerkkinä The Pirate Bayn Logo, jossa negatiivinen tila ilmaisee tarkoitusta.</p>
+<img src="http://upload.wikimedia.org/wikipedia/commons/1/16/The_Pirate_Bay_logo.svg" alt="piratebay logo" />
+
+
+<h2 id="laheisyys">Läheisyyden laki</h2>
+
+<p>Meillä on tapana ryhmittää asiat jotka ovat lähekkäin. Ryhmitetyistä asioista tulee näin ollen yksi havaittu objekti.
+Esimerkkinä HS.fi. Oikealla olevat uusimmat uutiset kohta on selvästi yksi asia kun taas vasemmalla puolella oleva artikkeli toinen.</p>
+<img src="../img/hs.jpg" alt="hs" />
+
+
+<h2 id="samankaltaisuus">Samankaltaisuuden laki</h2>
+
+<p>Meillä on tapana ryhmittää samankaltaiset asiat yhteen. Tämän jälkeen liitämme niihin jonkinlaisen merkityksen.
+M.C. Escher käyttää töissään usein tämän lain kaltaisia tekniikoita.</p>
+<img src="../img/mc.jpg" alt="mc escher" />
+
+<h2 id="jatkuvuus">Jatkuvuuden laki</h2>
+
+<p>Meillä on taipumus nähdä asiat hyvässä muodossa. Linjat jatkuvat mielessämme johdateltuun suuntaan. 
+Esimerkkinä oman Assignment A:n raakile jossa neliöt jatkavat samaa linjaa alaspäin.</p>
+<img src="../img/jatk.jpg" alt="oma" />
+</article>	
+<article>
+<hgroup>
+<h1 id="webguide">WEBSTYLE GUIDE MUISTIINPANOT</h1>
+</hgroup>
+<h2>KÄYTTÖLIITTYMÄN SUUNNITTELU</h2>
+
+<p>
+Käyttöliittymän suunnittelu
+
+Nettisivujen pitää antaa käyttäjälle tarkkoja vihjeitä sivujen kontekstista ja organisoinnista, 
+koska vain pieni osa sivustoa näkyy tai on käytettävissä kerrallaan.
+Muista ottaa huomioon myös pienten kannettavien laitteiden pienet näytöt.
+</p>
+
+<p>
+Selkeät navigointi avut<br/>
+
+Selkeät ja johdonmukaiset ikonit, graafiset identiteetti skeemat, sivujen otsikot ja kappaleotsikot, 
+ja grafiikka- tai tekstipohjaiset yhteenveto sivut voivat antaa käyttäjille itseluottamusta, että he löytävät etsimänsä, hukkaamatta turhaan aikaa.
+Käyttäjien pitäisi aina pystyä palaamaan helposti etusivulle ja muihin isompiin navigaatiokohtiin sivustoilla.
+</p>
+
+<p>
+Ei umpikuja sivuja<br/>
+
+Pidä huoli, että kaikilla sivuston sivuilla on vähintään linkki pääsivulle tai, 
+vielä parempaa linkki pääsivulle JA linkkejä muihin sivuston osiin. 
+Käyttöliittymän parantamisen lisäksi ne ovat erittäin tärkeitä hakukoneiden näkyvyyden kannalta.
+</p>
+<p>
+Suora yhteys<br/>
+
+Käyttäjät haluavat tietonsa mahdollisimman vähillä klikkauksilla.
+Eli sinun pitää suunnitella tehokas hierarkia informaatiolle minimoidaksesi ylimääräiset toimenpiteet (klikkaukset) menu sivuilla.
+Tutkimukset osoittavat, että käyttäjät suosivat muutamia hyvin organisoituja valintavaihtoehtoja monessa kerroksessa, kuin ylisimppeleitä menu sivuja.
+Hyvässä hierarkiassa oikea sisältö on vain parin klikkauksen päässä pääsivulta. 
+</p>
+<p>
+Yksinkertaisuus ja yhtenäisyys<br/>
+
+Käyttöliittymäsi kielikuvien pitäisi olla simppeleitä,
+tuttuja ja loogisia - jos tarvitset vertausta informaation valikoimallesi, valitse tuttu genre, 
+kuten tiedosto- kansiot tai hakemistot. Oudot ja "luovat" navigointi ratkaisut menevät aina mönkään, 
+koska niiden käyttöliittymä on ennalta arvaamaton, jonka kanssa käyttäjät joutuvat tuskailemaan.
+</p>
+ 
+<span class="kursiivi">Anna sisällön loistaa ja käyttöliittymän siirtyä taka-alalle.</span>
+
+
+<p>
+Designin eheys ja pysyvyys<br/>
+
+Sivusto joka näyttää sutaisten rakennetulta, jolla on huono visuaalinen design ja alhaiset
+toimitukselliset standardit, ei herätä luottamusta.<br/>
+
+Funktionaalinen pysyvyys tarkoittaa interaktiivisten elementtien luotettavaa toimintaa. Se muodostuu kahdesta osasta:<br/>
+</p>
+<ul>
+<li>Tehdään asiat oikein alusta lähtien.</li>
+<li>Pidetään asiat toimivina ajan kuluessa.</li>
+</ul>
+Muista käydä tarkistamassa sivuiltasi, että vanhat linkit vievät vieläkin paikkaan jonne niiden alunperin piti viedä. 
+
+<p>
+Palaute ja dialogi
+<br/>
+Hyvin suuniteltu sivusto antaa suoran linkin sivujen webeditorin tai webmasterin yhteystietoihin.
+Kannattaa pitää yllä hyvää suhdetta sivun käyttäjien kanssa, se on hedelmällistä pitkällä aikajuoksulla.
+</p>
+<p>
+Kaista ja interaktio
+<br/>
+Käyttäjät eivät voi sietää pitkiä odotusaikoja. Ihmisellä kestää noin 10 sekuntia turhautua odotellessa nettisivun latautumista.
+Jos sivuilla on kansainvälistä liikennettä, kannattaa välttää liian raskasta graafista asua. Logeista näet yleisimmät käyttäjien sijainnit ja yhteydet.
+Jotkin datalähteet myös lisäväät sivujen hidastelua ja liikkuvaa data määrää, kuten RSS fiidit.
+</p>
+
+
+
+<h2>Käyttöliittymän suunnittelun käytännöt</h2>
+
+<p>
+Loppukäyttäjille tutuimman layoutin saat seuraamalla kuvan esittämää tapaa sijoitella eri elementit sivuille.
+Kun suunnittelet sivuillesi käyttöliittymää, muista että ideaali käyttöliittymä ei yritä kilpailla sisällön kanssa käyttäjän huomiosta. 
+</p>
+
+<span class="kursiivi">Käyttöliittymä on kehys, ei maalaus.</span>
+<p>
+Mitä laitetaan headeriin?
+<br/>
+Nettisivujen otsikko on paikka jolla sivujen identiteetti välitetään. Käyttäjätutkimukset osoittavat, 
+että sivujen vasen ylälaita on paikka josta käyttäjät olettavat löytävänsä linkin etusivulle sekä sivustojen nimen. 
+Käyttäjät myös olettavat, että headerillä on suuri rooli sivuston navigoinnissa. 
+<br/>
+"Kansio välilehdet" ovat ideaaleja kun sivuilla on suhteellisen vähän (viidestä seitsemään) päänavigaatio kohtaa. 
+Jos sinulla on enemmän kuin seitsemän, harkitse välilehdistä luopumista.
+<br/>
+Semanttisesti headerin navigaatio pitäisi aina olla merkattuna HTML listoiksi, 
+vaikka ne näyttäisivät enemmän kansio välilehdiltä. Tämä lisää tehokkaasti yleistä käytettävyyttä ja helpottaa sivujen organisointia hakukoneille. 
+CSS voi käyttää linkkien muotoilussa saadakseen näyttämään ne välilehdiltä. 
+</p>
+<p>
+Navigaatiolinkit oikealle vai vasemmalle?
+<br/>
+Yleensä navigaatiot sijoitetaan vasemmalle, mutta myös äärioikea käy. Useimmiten käytetään kuitenkin vasenta koska käyttäjät ovat tottuneet siihen muille sivuilla.
+Oikealle sijoitetaankin yleensä mainokset ja liittyvät linkit. 
+Käytettäessä oikeanpuolista tyyliä, pitää pitää, että linkit erottuvat todella selkeästi mainoksista.
+</p>
+<p>
+Leivänmurupolut navigoinnin apuna
+<br/>
+Nimi johtuu Hannun ja Kertun käyttämästä leivänmurujen jälkeen jättämisestä. 
+Käytännössä se on yksinkertainen hierarkinen lista linkeistä, alkaen etusivusta ja loppuen lähimpään sivuun nykyisestä, 
+tai nykyiseen sivuun. Jokainen askel on klikattava linkki jolla pääsee taaksepäin. 
+Leivänmurut myös lisäävät jokaiselle sivulle yhden määräävän keywordin, sekä parantavat hakujen toimivuutta.
+</p>
+
+<h2 id="rakenne">SIVUJEN RAKENNE</h2>
+
+<p>
+Sisällön semanttinen merkkaus
+
+HTML:än oikea käyttö on tärkeää, jotta  nettisivuista saadaan maksimaalinen joustavuus ja kannattavuus.
+HTML markup on semanttista kun taas HTML tageja käytetään ilmaisemaan merkityksiä ja sisällön rakennetta,
+ei vain saadakseen teksti näyttämään tietynlaiselta.
+</p>
+<ul>
+ <li>&lt;h1&gt;Tärkeimmät otsikot&lt;/h1&gt;</li>
+ <li>&lt;p>Normaali kappale, jossa tiettyjä sanoja ja lauseita voidaan  &lt;em> painottaa &lt;/em&gt;&lt;p&gt;</li>
+ <li>&lt;strong&gt;Erityisen tärkeä teksti&lt;/strong>.</li>
+ <li>&lt;h2&gt;Toiseksi tärkeimmät otsikot, alaotsikot&lt;/h2&gt;</li>
+ <li>&lt;p&gt;Listauksen voi tehdä:&lt;/p&gt;</li>
+ </ul>
+ <ul>
+ <li>Listatut asiat viestivät sisällön samankaltaisuudesta</li>
+ <li>Listat voi laittaa järjestykseen (numeroituun tai aakoselliseen) tai epäjärjestykseen (Bulletit)</li>
+ <li>Listoilla voi myös tehdä menuja ja navigointi linkkejä </li>
+ <li>CSS:llä voidaan muotoilla listat haluttuun muotoon.</li>
+ </ul>
+<p>
+Jopa näinkin helpoilla tavoilla saadaan hakukoneet erottamaan otsikoiden tärkeys ja prioriteetti, 
+auttaa niitä löytämään tärkeät avainsanat, ja tunnistaa konseptuaallisesti samankaltaiset asiat listauksissa. 
+</p>
+<p>
+HTML dokumentin rakenne<br/>
+<br/>
+Kunnolla rakenneellistettu HTML (or XHTML) dokumentti voi sisältää seuraavat elementit:
+<br/>
+<p>
+HTML dokumentin rakenne.
+</p>
+<p>
+Semanttinen merkkaus ilmaisemaan tarkoitusta ja sisällön rakennetta. (otsikot, kappale tekstit, listat, tiedostot).
+Visuaalinen esitystapa (CSS), jolla saadaan sisältö tietyn näköiseksi.
+Linkkejä audiovisuaaliseen sisältöön (Gif, jpeg, tai PNG grafiikka, QuickTime tai muut media tiedostot).
+</p>
+<br/>
+Kunnollisessa HTML:ssä, kaikki sivujen koodi sisältyy kahden peruselementin sisään:
+<br/>
+<ul>
+<li>Head &lt;head&gt;…&lt;/head&gt;</li>
+<li>Body &lt;body&gt;...&lt;/body&gt;</li>
+</ul>
+<p>
+Headiin laitetaan koodistandardit ja dokumentin tyyppi. Sinne laitetaan myös title, sekä linkit erillisiin tyylitiedostoihin ja JavaScripteihin.
+</p>
+<p>
+Bodyyn laitetaan kaikki sivun sisältö, ja se on tärkeää jotta CSS ja ohjelmoinnit voivat kontrolloida visuaalista puolta.
+Bodyn sisäiset alueet on yleensä jaettu &lt;div&gt;:eihin ja &lt;span&gt;:eihin. Esimerkiksi &lt;div&gt; tageilla on yleensä eroteltu header, footer, content ja navigointi, jotta näitä voidaan tyylitellä CSS:llä.
+</p>
+<p>
+HTML on tämän hetken standardi webbisivujen tekoon. Xhtml on todella samanlainen kuin HTML, 
+mutta Xhtml on johdettu xml:stä ja se on paljon nirsompaa. Xhtmllä on joitakin etuja:
+</p>
+<ul>
+<li>Yhteensopivuus XML tekniikoiden, XML sisällön, ja hybridi JavaScript/XML tekniikoiden kuten Ajaxin kanssa</li>
+<li>Yhteensopivuus MathML kanssa tieteellisiin dokumentteihin, SMIL interaktiiviseen audiovisuaaliseen sisältöön, ja SVGlle (Scalable Vector Graphics).</li>
+<li>Tulevaisuuden yhteensopivuus uusien XML tekniikoiden kanssa.</li>
+</ul>
+<p>
+Sisällön merkkaus semanttisesti<br/>
+<br/>
+Älä koskaan valitse HTML tagia sen perusteella miltä se näyttää nettiselaimessa. Voit säätää sisällön visuaalista puolta myöhemmin CSSllä.
+Joitakin visuaalisia HTML tageja kuten &lt;b&gt;  ja &lt;i&gt; 
+käytetään edelleen koska niitä tarvitaan tietyissä erityistapauksissa, kuten tieteellisissä nimissä. Jos käytät semanttisesti merkityksettömiä tageja kuten &lt;b&gt; tai &lt;i&gt;, 
+mieti lisäisikö &lt;em&gt; tai &lt;strong&gt;tagi enemmän korostusta.  Muista, että monet tyylitiedostot vaativat tarkkaa sivuelementtien semanttista nimeämistä.
+</p>
+<p>
+CSS
+
+Antaa graafikoille täyden kontrollin html elementtien visuaalisessa näyttävyydessä. 
+CSSllä voidaan kerralla muuttaa kaikki samanlaista tagia käyttävät elementit.
+</p>
+<p>
+Audiovisuaalinen sisältö<br/>
+<br/>
+Nettisivut eivät sisällä grafiikkaa ja ääniä suoraan, vaan käyttävät kuvia tai muita osoittajalinkkejä sisällytäkseen grafiikkaa ja mediaa viimeisin loppukäyttäjälle näkyvään näkymään selaimessa.
+Nämä linkit ja alternate teksti (”alt=”) tai long description (”longdesc”) linkit ovat kriittisiä käytettävyyden kannalta. Ne myös auttavat hakukone näkyvyydessä. 
+Hakukoneet etsivät alternate tekstejä ja merkkaavat kuvat keywordeilla näiden perusteella. 
+Oikeanlainen semanttinen merkkaus pitää huolen, että audiovisuaalinen media on kaikilla mahdollisimman hyvin käytettävissä.
+</p>
+<p>
+Interaktiivinen skriptaus<br/>
+<br/>
+JavaScript on kieli jota yleensä käytetään interaktion luonnissa. Kaikki JavaScript koodi sijaitsee &lt;head&gt;. tagien sisällä.
+Kannattaa kuitenkin varoa ettei Java työnnä &lt;body&gt;  tagien sisällä olevaa koodia monta sivua alaspäin, jolloin sitä ei löydetä hakukoneilla. 
+Jos käyttää client-side skriptausta kannattaa laitta kaikki paitsi aivan pienimmät koodit linkattuun tiedostoon. Näin säilytät hakukone näkyvyyden.
+</p>
+
+<p>
+Muut dokumentti formaatit<br/>
+<br/>
+Lisätoimintoja sivuille voidaan lisätä PDF, Flash ja Shockwave tekniikoilla. 
+PDF tiedostoja käytetään tekstitiedostoihin. Lisää interaktiota, jota html ei itsessään sisällä, saadaan Flash ja Shockwave tekniikoilla.
+</p>
+<p>
+Muista erilaiset selaimet<br/>
+<br/>
+HTML ja CSS voivat näkyä erilailla eri selaimilla. Älä koskaan luota nettisivujesi toimintaan ennen kuin olet testannut sen yleisimmillä selaimilla.
+Weblogit paljastavat mitä selaimia käyttäjät käyttävät sivujen katseluun. Tähän tarkoitukseen voidaan käyttää myös Google Analytics palvelua.
+</p>
+
+
+<h2 id="trakenne">SIVUSTON TIEDOSTORAKENNE</h2>
+<p>
+Sivujen semanttisen organisoinnin tavoitteena on tuottaa looginen, jatkuva systeemi HTMLlle ja muille tiedostoille, hakemistoille ja CSS komponenteille.
+Jatkuva, modulaarinen lähestyminen sivuston rakentamiseen johtaa hyvin skaalautuvaan sivustoon, 
+jonkalaista rakennetta voidaan käyttää niin isoissa kuin pienissä projekteissa. 
+<p>
+Nimeämiskäytänteet
+
+Älä käytä teknistä tai numeerista sekasotkua nimetessäsi komponentteja.
+Autat eniten itseäsi kun selität koodia kommenttien avulla.  
+<p>
+Sivujen, hakemistojen ja muiden tiedostojen nimeäminen
+
+Käytä järkeviä nimiä eri tiedostoille, joista selviää heti tiedostonnimestä sen paikka sivustossa.
+Nettisivut koostuvat linkeistä kuviin, kuvat eivät ole "nettisivussa".
+</p>
+<p>
+Käytä helposti ymmärrettävää kieltä<br/>
+<br/>
+Käytä normaaleja nimiä kaikilla tiedostoille. Hyödynnä väliviivoja kun erottelet sanoja.
+Tämäkin helpottaa hakukoneita löytämään sivusi. Samaa tekniikkaa voi käyttää myös hakemistojen nimeämisessä.
+</p>
+<p>
+Peilaa näkyvää sivun rakennetta<br/>
+<br/>
+Auttaa taasen hakukoneiden näkyvyydessä. Peilaa sivun rakennetta selattaessa sivun URLissa.
+Väliviivat auttavat erottamaan asiat toisistaan. Samoiten tee kansio rakenne joka seuraa tarkasti sivuston selaustapaa.
+</p>
+
+
+<h2 id="yllapidettavyys">TEHOKAS JA YLLÄPIDETTÄVÄ RAKENNE</h2>
+<p>
+Hyvin suunnittelut sivut sisältävät modulaarisia elementtejä joita voidaan käyttää useamman kerran useiden sivujen kesken,
+kuten headerin linkit ja grafiikat, tai yhteydenotto informaatiot. Käytä yhtä tiedostoa joka sisältää kaikki standardi elementit,
+joita käytetään useammalla sivulla: näin sinun ei tarvitse muuttaa kuin yhtä tiedostoa muuttaaksesi useaa sivua. 
+<p>
+<p>
+Include
+
+Web palvelimilla on usein käytössä systeemi, jossa voidaan linkittää html tiedostoja tavallisella tekstitiedostolla. 
+Käyttäjän mennessä sivuille serveri kasaa kokoon sivustoon tarvittavat htmllät, jotka on includella sisällytetty alkuperäiseen tiedostoon. 
+Toistuvia sisältöjä kannattaa yrittää käyttää includea hyödyntämällä.
+<p>
+<p>
+CSS Cascaden käyttäminen<br/>
+<br/>
+CSS on laajennettava järjestelmä, jossa samankaltaiset CSS käskyt, jotka on jaettu useammalle CSS tiedostolle voidaan sarjoittaa 
+hyvin yleisistä tyyleistä todella erityisiin tyyleihin. CSS Cascadella on kaksi isoa elementtiä:
+</p>
+
+<ul>
+<li> Cascade hierarkia</li>
+<li> Yleinen sivukoodi on ylempänä kuin jaettu, ja HTML tageihin sisällytetty CSS koodi on ylempänä kuin yleinen sivukoodi.</li>
+<li>Jaettu CSS</li>
+</ul>
+
+<p>
+Voidaan käyttää yhtä CSS tiedostoa Master filuna johon muut CSS tiedostot linkittävät.
+Nämä Masterit kontrolloivat koko sivun tyylejä. Jos kaikilla sivuilla on sama master CSS tiedosto,
+voit muuttaa minkä tahansa sen tiedoston komponenttia ja vaikutus näkyy kaikilla sivuilla.
+<br/>
+Paketoidessa monta CSS tiedostoa yhteen saavutetaan monta käytännön hyötyä.
+Monimutkaisilla sivuilla CSS koodia voi olla satoja viivoja, ja voikin olla käytännöllisempää jakaa sellaiset elementit kuten sivun perus layout CSS master filusta typografia tyyleihin.
+On helppoa linkittää CSS tiedostot ja antaa Master CSS layoutin ja typographia tyylien kontrolloida kaikkia sivuston sivuja.
+</p>
+<p>
+CSS Skin tiedostot<br/>
+<br/>
+Jos ei halua kaikkien sivujen näyttävän samoilta voidaan lisätä vielä kolmas erilainen CSS pakkaan.
+Skin tiedostolla voidaan antaa tietyt määritteet väreille ja grafiikalle, niiden sivuston osien kesken joilla on samankaltainen visuaalinen design. 
+</p>
+<p>
+Media tyylitiedostot<br/>
+<br/>
+Voidaan esimerkiksi tehdä oma layout tyyli tulostukselle ja kannettaville laitteille, kuten tabletit ja kännykät.
+</p>
+
+<h2 id="semantiikka">HTML CONTENT CONTAINEREIDEN SEMANTTINEN RAKENNE</h2>
+
+<p>
+Standardisoidut web sivut koostuvat monista alaosastoista, jotka eivät vain luo sivujen funktionaalista aluetta (kuten footer, header, navigaatio),
+mutta myös antavat uniikin ja yksilöivän "ID":n kaikille standardi elementeille. "Wrappereina" käytetään &lt;div&gt; ...&lt;/div&gt;  ja &lt;span&gt; ...&lt;/span&gt;  tageja.
+Alaosastot ja spanit pitää aina nimetä yksilöivästi. Järkevä semanttinen nimeäminen on helppoa aluksi, 
+mutta se voi olla mahdotonta kun sivut ovat ja pystyssä ja käytössä.
+</p>
+
+<p>
+Nämä ovat tärkeitä koska:<br/>
+</p>
+<br/>
+<ul>
+<li>Et voi tyylitellä sellaista jolla ei ole nimeä.</li>
+<li>Se helpottaa kun halutaan tyylitellä tehokkaasti vain yhtä kohtaa tai content blockia.</li>
+<li>Tulevaisuuden uusien tyylitiedostojen ja cms järjestelmien käyttöönotto helpottuu.</li>
+</ul>
+
+
+<h2 id="rakenne2">SIVUSTON RAKENNE JA DESIGN</h2>
+<p>
+Netti "sivustot" ovat vain abstraktioita, ne ovat olemassa vain päässämme. 
+Muodostamme graafisesti ja navigoinniltaan yhtenäisistä sivuista kokonaisuuksia. 
+Tämän illuusion luo sivujen keskeinen design. Yksittäiset HTML sivut ovat nettisivujen atominen yksikkö ja
+kaikki mikä karakterisoi sivujen rakennetta täytyy näkyä sivun templatessa.
+</p>
+<p>
+Sivujen headerit
+
+Headerit ovat kuin sivujen miniatyyri versio. Headerit luovat sivuille identiteettiä ja yleistä navigaatiota, sekä haut ja muita työkaluja.
+Headerit ovat sivujen näkyvin identiteetin luoja. Sivut joilla on samanlainen header luovat sivuista sivuston vaikka ne olisi luotu täysin eri tekniikoilla, kuten PHP, JSP, .NET yms.
+</p>
+<p>
+Etusivu linkki
+
+Logot sijaitsee yleensä headerin vasemmassa yläkulmassa ja siihen pitäisi sisällyttää linkki etusivulle.
+Jos ei käytetä logoa tai grafiikkaa niin ainakin pitää muistaa laittaa "etusivu" linkki lähelle tätä paikkaa, 
+koska sieltä käyttäjät ovat tottuneet sen löytämään.
+</p>
+<p>
+Globaali navigointi<br/>
+<br/>
+Yleensä headerissa. Ideaali ratkaisu on käyttää HTML list linkkejä, jotka on tyylitelty CSS ja 
+levitetty horisontaalisesti tietyn headerin kohdan yli. Tällä saavutetaan:
+</p>
+<ul>
+<li>Käytettävyyttä</li>  
+<li>Semanttista logiikkaa</li>  
+<li>Esteettömyyttä</li>  
+<li>Hakukoneiden näkyvyyttä</li>  
+</ul>
+<p>
+Tabit ovat toinen yleinen, helposti ymmärrettävä tapa toteuttaa globaalia navigointia.
+Paras tapa on tehdä HTML list ja antaa tälle hienompi ulkoasu käyttäen CSS. Muista selkeys. 
+Valittu tabi pitäisi aina olla etualalla, kun taas jäljellä olevien takana.
+Valitun tabin alle voidaan myös luoda toinen rivi tabeja, taas HTML ja sitten CSS muotoilu.
+</p>
+<p>
+Haku<br/>
+<br/>
+Jos sivujen yhteismäärä ylittää tusinan, pitäisi sivuilta löytyä hakukone.
+Tämä sijaitsee lähes aina oikeassa yläkulmassa.
+Jos halutaan antaa käyttäjälle optionsseja hakuun kannattaa se sijoittaa vasempaan 
+tai oikeaan scan columniin.
+</p>
+<p>
+Ostoskori ja mainokset<br/>
+<br/>
+Amazon laittoi alunperin ostoskorin oikeaan kulmaan ja siitä lähtien käyttäjät ovat tottuneet sen sieltä myös löytämään.
+Mainoksia tukevien sivujen kannattaa jättää tilaa headerin ylle. Käyttäjät osaavat jo suodattaa näkemäänsä ja tietävät missä kohtaa sivua mainokset sijaitsevat.
+Lukijat ja käyttäjät jättävät usein huomioimatta paikat, joissa mainoksia yleisimmin on. Mainokset eivät saa häiritä muun sivuston toimintaa.
+</p>
+<p>
+Scan columns<br/>
+<br/>
+Tutkimukset osoittavat, että käyttäjät ovat tottuneet löytämään osion navigaation vasemmasta kolumnista.
+Scan columneihin voidaan myös sijoittaa hakulaatikot, posti osoitteet ja kontakti tiedot, sekä muut pienet, mutta tärkeät sivuelementit. 
+</p>
+<p>
+Vasen vai oikeanpuoleinen kolumni navigaatiolle?<br/>
+<br/>
+Käyttäjille on aivan sama kummalta puolelta kolumni löytyy, kunhan sijoittelu on johdonmukaista.
+</p>
+<p>
+Postiosoite ja muu yhteydenotto tieto<br/>
+<br/>
+Jos yrität myydä jotain tuotetta/tuotteita, älä piiloudu asiakkailta. Näytä kontaktitiedot samassa paikassa joka sivulla.
+</p>
+<p>
+Mainokset<br/>
+<br/>
+Samat neuvot kuin headerin mainoksissa. 
+</p>
+<p>
+Content<br/>
+<br/>
+Seuraavilla käytänteillä saadaan sisällöstä helpompikäyttöistä:
+</p>
+<ul>
+<li>  Sivujen otsikot: Joka sivulle näkyvä nimi ylös. Käytä &lt;h1&gt;.</li>   
+<li>  Leivänmuru navigaatio: Contentin yläosassa.</li>  
+<li>  Takaisin alkuun linkit: Sopivat hyvin pitkille sivuille. Pienellä ylöspäin osoittavalla nuolella voidaan selkeyttää navigaatiota.</li>  
+<li>  Välit: Lisää hieman paddingia niin selkeytyy lukeminen.</li>  
+<li>  Sivunavigointi: Helpot tekstilinkit ylä- ja alapuolella. Pitkissä ketjuissa on hyvä antaa informaatiota nykyisestä sijainnista.</li>  
+<li>  Päivämäärät: Julkaisu ja päivity päivämäärät kertovat asian ajankohtaisuudesta. Sijaintina sisällön alaosa.</li>  
+</ul>
+
+<p>
+Footerit<br/>
+<br/>
+Nämä elementit täytyy löytyä sivuilta, mutta niiden pitää olla poissa tieltä, eli esim. footerissa:
+</p>
+<ul>
+<li>  Sivujen ylläpitäjä</li>  
+<li>  Copyright</li>  
+<li>  Yhteystiedot, email</li>  
+<li>  Linkit emoyhtiöön tms.</li>  
+<li>  Ylimääräiset ja turhat linkit</li>  
+</ul>
+<p>
+Lähteet: 
+</p>
+<ul>
+<li><a href="http://webdesign.about.com/od/webdesignbasics/a/aa052807.htm">http://webdesign.about.com/od/webdesignbasics/a/aa052807.htm</a></li> 
+<li><a href="http://webdesign.about.com/od/webdesignbasics/a/aa053007.htm">http://webdesign.about.com/od/webdesignbasics/a/aa053007.htm</a></li> 
+<li><a href="http://www.squidoo.com/gestaltlaws">http://www.squidoo.com/gestaltlaws</a></li> 
+<li><a href="http://webstyleguide.com/wsg3/index.html">http://webstyleguide.com/wsg3/index.html</a></li> 
+</ul>
+
+</article>
+	</div>
+    </section>
+	<div id="footer">
+    <!-- Kari Leskinen | g9474@student.jamk.fi | HTI12S1A -->
+    </div>
+</div>
+
+</body>
+</html>
