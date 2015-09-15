@@ -1,0 +1,157 @@
+            #ylapalkki
+            {
+              position: absolute;  
+              width:    1500px;
+              height:   50px;
+              background-color: grey;
+            }          
+            
+            
+            .koko_editori
+            {               
+               position: relative; 
+               width:    1500px;
+               height:   600px;
+               top:      50px;
+            }          
+            
+            .ohjeet
+            {
+               float:   left;              
+               width:   500px;
+               height:  600px;
+               top: 0;            
+               right: 0;
+            }
+            #ohje_yla
+            {               
+                
+            }          
+            #ohje_ikkuna
+            {                
+                width:  500px;  
+                height: 600px; 
+                background-color: antiquewhite;              
+                word-wrap:break-word;
+            }
+            #ohje_ala
+            {
+               
+            }            
+            
+            
+            .input
+            {
+                float:  left; 
+                top:    0;            
+                left:   500px;
+            }
+            #input_yla
+            {
+             
+            }
+            #editor
+            {
+                width:  500px;  
+                height: 600px;
+                margin-top: 6px;
+            }
+            #input_ala
+            {
+              
+            }
+            
+            
+            
+            .output
+            {
+              float:    left;               
+              width:    500px;
+              height:   600px;
+              top:      0;            
+              left:     1000px;
+            }
+            #output_yla
+            {
+                
+            }
+            #output_ikkuna 
+            {
+              width:    500px;
+              height:   600px; 
+              background-color: aqua;
+               margin-top: 6px;
+            }
+            #output_ala
+            {
+               
+            }
+            
+            
+            
+            
+            #aja_button 
+            {
+                position: relative;                
+                z-index: 1;
+            }   
+            
+            #takaisin_button
+            {
+               position: relative;
+            }
+            
+            #eteenpäin_button
+            {
+                
+            }
+            
+            
+            
+            
+            
+            
+pull-me{
+        -webkit-box-shadow: 0 0 8px #FFD700;
+        -moz-box-shadow: 0 0 8px #FFD700;
+        box-shadow: 0 0 8px #FFD700;
+        cursor:pointer;
+}
+.panel {
+        background: #ffffbd;
+        background-size:90% 90%;
+        height:300px;
+        display:none;
+        font-family:garamond,times-new-roman,serif;
+        z-index: 100;
+}
+.panel p{
+        text-align:center;
+        z-index: 100;
+}
+.slide {
+	margin:0;
+	padding:0;
+        z-index: 100;
+	
+}
+.pull-me {
+        display:block;
+        position:relative;
+        right:-25px;
+        width:150px;
+        height:20px;
+            font-family:arial,sans-serif;
+        font-size:14px;
+            color:#ffffff;
+        background:#cc0000;
+            text-decoration:none;
+        -moz-border-bottom-left-radius:5px;
+        -moz-border-bottom-right-radius:5px;
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
+        z-index: 100;
+}
+.pull-me p {
+    text-align:center;
+}
