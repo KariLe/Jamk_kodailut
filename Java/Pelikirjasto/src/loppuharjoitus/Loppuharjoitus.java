@@ -1,25 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- * 1: Opiskelija osaa käyttää ohjelmointiympäristöä tarkoituksenmukaisesti (projektit, luokat, debugger), sekä ymmärtää ja osaa käyttää muuttujia, operaattoreita ja ehtolausekkeita osana työtään.
-2: Edellisen lisäksi opiskelija ymmärtää päätös-, silmukka- ja haarautumisrakenteet ja osaa käyttää niitä tarkoituksenmukaisesti. Opiskelija ymmärtää pää- ja aliohjelman eron ja osaa käyttää aliohjelmia osana työtään.
-3: Edellisen lisäksi opiskelija ymmärtää taulukoiden merkityksen ja käytön ohjelmoinnin työkaluna, sekä osaa käyttää niitä tarkoituksenmukaisesti
-4: Edellisen lisäksi opiskelija hallitsee poikkeukset ja virheiden käsittelyn.
-5: Edellisen lisäksi opiskelija osaa käyttää tiedostoja tai tietokantaa tiedon tallennuspaikkana. Opiskelija osaa etsiä ja käyttää ohjelmointikielen tarjoamia (kenties muitakin kuin opintojaksolla esiin tulleita) luokkia tarkoituksenmukaisesti osana työtään.
- * 
- * 
- * 
- * 8.1  6h
- * 10.1 1h
- * 11.1 4h
- * 12.1 4h
- * 13.1 1h
- * 14.1 2h
- * 20.1 2h
- * 26.1 1h
- * 
- * yht. 21h
- */
+
  
 package loppuharjoitus;
 
