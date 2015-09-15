@@ -1,0 +1,30 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+        <title>Json dataa</title>                
+        <script src="jquery.js"> 
+        </script>
+        <script>
+        $(document).ready(function(){         
+          $.getJSON('http://localhost/json/index.php/jsonworld/jsonina',function(data){ 
+              //append json data diviin "id"
+              $("#id").append('<p>'+data.json[0].title+'</p>');   
+              $("#id").append('<p>'+data.json[0].text+'</p>'); 
+          });        
+        });
+        </script>      
+     
+        
+    </head>
+    <body>              
+         
+        <div id="id">  
+   
+        </div>
+    </body>
+</html>

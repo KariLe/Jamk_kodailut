@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kirjasto>
+    <kirja>
+        <nimi>Seitsem�n Veljest�</nimi>
+        <kirjailija sukupuoli="mies">Aleksis Kivi</kirjailija>
+        <kuvaus>
+        Aleksis Kiven p��teos. Kertomus Jukolan seitsem�st� veljeksest�.
+        </kuvaus>
+    </kirja>
+    <kirja>
+        <nimi>Harry Potter ja viisasten kivi</nimi>
+        <kirjailija sukupuoli="nainen">J.K.Rowling</kirjailija>
+        <kuvaus>
+        Suositun fantasiasarjan ensimm�inen osa. Kertomus Harry Potterista joka joutuu velhojen kouluun.
+        </kuvaus>
+    </kirja>
+    <kirja>
+        <nimi>Sinuhe Egyptil�inen</nimi>
+        <kirjailija sukupuoli="mies">Mika Waltari</kirjailija>
+        <kuvaus>Historiallinen romaani muinaisesta Egyptist�.</kuvaus>
+    </kirja>
+</kirjasto>
